@@ -3,6 +3,9 @@
   <name>Build</name>
   <description />
   <settings>
+    <options>
+      <option name="artifactRules" value="target/*.jar =&gt; my-artifacts/" />
+    </options>
     <parameters>
       <param name="maven.goals" value="%teamcity.build.branch% == master ? &quot;clean deploy&quot; : &quot;clean test&quot;" />
     </parameters>
